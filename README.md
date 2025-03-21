@@ -10,6 +10,16 @@ The website is configured with a WWW-first approach:
 - SSL: Enabled via GitHub Pages
 - DNS: Managed through Namecheap
 
+## Navigation
+
+The site uses hash-based routing for smooth section navigation:
+- Home: https://www.pawleydigital.com/
+- About: https://www.pawleydigital.com/#about
+- Work: https://www.pawleydigital.com/#work
+- Contact: https://www.pawleydigital.com/#contact
+
+All paths work with both WWW and apex domains, with proper redirect handling.
+
 ## Structure
 
 ```
@@ -27,6 +37,8 @@ pawley-digital/
 - Smooth scrolling navigation
 - Interactive hover effects
 - Google Fonts integration (Inter)
+- Hash-based section routing
+- Preserved paths in domain redirects
 
 ## Local Development
 
@@ -39,7 +51,15 @@ The site is hosted on GitHub Pages with the following configuration:
    - Branch: main
    - Custom domain: www.pawleydigital.com
    - HTTPS: Enforced
+   - Force HTTPS: Enabled
 
 2. DNS Configuration:
    - WWW: CNAME record pointing to GitHub Pages
    - Apex: URL redirect to www.pawleydigital.com
+   - Path preservation: Enabled in redirects
+
+3. Testing Status:
+   - WWW domain: ✓ Verified with HTTPS
+   - Section navigation: ✓ Working
+   - Path handling: ✓ Tested
+   - SSL certificates: ✓ Valid
